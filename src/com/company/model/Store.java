@@ -3,17 +3,19 @@ package com.company.model;
 import com.company.model.products.Product;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Store {
-    List<Product> products;
+    Map<String,List<Product>> products;
 
-    public Store(List<Product> products) {
-        this.products = new ArrayList<>();
+    public Store(Map<String,List<Product>> products) {
+        this.products = products;
     }
 
-    public void addProduct(Product product)
+    public void addProduct(String category, Product product)
     {
-        products.add(product);
+        products.get(category).add(product);
     }
 }
