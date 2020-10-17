@@ -10,8 +10,8 @@ import java.util.Map;
 public class Store {
     Map<String,List<Product>> products;
 
-    public Store(Map<String,List<Product>> products) {
-        this.products = products;
+    public Store() {
+        this.products = new HashMap<>();
     }
 
     public void addProduct(String category, Product product)
