@@ -12,7 +12,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class Store {
-    Map<String,List<Product>> products;
+    public Map<String,List<Product>> products;
 
     public Store() {
         this.products = new HashMap<>();
