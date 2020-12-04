@@ -1,6 +1,6 @@
 package com.company.exeptions;
 
-class ProductNotFoundException extends RuntimeException {
+public class ProductEqualsNill extends RuntimeException {
     @Override
     public String toString()
     {

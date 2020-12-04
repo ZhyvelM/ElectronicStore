@@ -1,5 +1,7 @@
 package com.company.service;
 
+import com.company.exeptions.ProductEqualsNill;
+import com.company.model.products.Product;
 import com.company.service.interfaces.StoreServiceInterface;
 
 public class StoreService implements StoreServiceInterface {
@@ -15,11 +17,18 @@ public class StoreService implements StoreServiceInterface {
 
     @Override
     public void search(String string) {
-        try{
-            //search; if no such throw RuntimeException
-        }catch (RuntimeException e)
+        //
+    }
+
+    @Override
+    public void add(Product product) {
+        try {
+            //Store.add(product);
+        }catch (ProductEqualsNill e)
         {
-            e.toString();
+
         }
     }
+
+
 }
